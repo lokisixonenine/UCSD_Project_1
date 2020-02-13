@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talk Geeky To Me</title>
+    <link href="https://fonts.googleapis.com/css?family=Fontdiner+Swanky|Lexend+Deca&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div style="background-image: url(assets/images/elvish.png)" class="body">
+        <image class="img-logo" src="assets/images/logo.png" alt="logo">
+
+            <div class="wrapper">
+                <article class="img-info">
+                    <h1>Geeky Language Translator</h1>
+                    <!-- <button>Your Text</button> -->
+                    <span><input id="yourtext" type="text" placeholder="Your text..."></span>
+                    <!--language select and translate button-->
+                    <!--Select a language-->
+                    <!-- <div><button>Select Language</button> -->
+                    <!-- <input type="text" placeholder="Your selected language"></div> -->
+                    <select id="dropDown" data-target="dropdown2" class="btn dropdown-trigger user-choice"
+                        value="choice">
+                        <option>Select</option>
+                        <option value="Dothraki">Dothraki</option>
+                        <option value="Elvish">Elvish</option>
+                        <option value="Valley Girl">Valley Girl</option>
+                        <option value="Sith">Sith</option>
+                        <option value="Yodish">Yodish</option>
+                        <option value="Valyrian">Valyrian</option>
+                        <!-- <option value="example1">Ex1</option> -->
+                    </select>
+            </div>
+            <div>
+
+                <button class="buttons" id="translate-all">Translate</button>
+                <h3>Your Translation: </h3>
+                <div class="translated-output"></div>
+
+
+                <button id="tweet"><a class="buttons twittersharelink" target="_blank"
+                        id="tweet-tweet">Tweet</a></button>
+
+
+                </article>
+                <img id=yodaImage class="img-child" src="assets/images/child.png" alt="baby geeky child">
+            </div>
+
+            <ul class="collapsible popout">
+                <li>
+                    <div class="collapsible-header"><img src="./assets/images/wizard.png" class="elf-icon" alt="">About
+                        The Elves:
+                    </div>
+                    <div class="collapsible-body"><span>The Elves, who called themselves the Quendi, and who in lore are
+                            commonly
+                            referred to as the Eldar (adj. Eldarin), were the first and eldest of the Children of
+                            Ilúvatar, and are
+                            considered to be the fairest and wisest of any race of Arda given sapience.</span></div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><img src="./assets/images/sith.png" class="sith-icon" alt="">About
+                        the Sith:
+                    </div>
+                    <div class="collapsible-body"><span>The Sith, also referred to as the Sith Order, was an ancient
+                            religious order
+                            of Force-wielders devoted to the dark side of the Force. Driven by their emotions, including
+                            hate, anger, and
+                            greed, the Sith were deceptive and obsessed with gaining power no matter the cost. The order
+                            reached the apex
+                            of its power under Darth Sidious, the Dark Lord of the Sith who achieved his order's goal of
+                            galactic conquest
+                            after a millennium of plotting. Within a generation, however, the death of Darth Vader would
+                            mark the end of
+                            the order of Sith Lords..</span></div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><img src="./assets/images/icons8-targaryen-house-30.png"
+                            class="targ-icon" alt="">About Valyrian</div>
+                    <div class="collapsible-body"><span>The Valyrians, also known as the Blood of Old Valyria or Blood
+                            of the Dragon,
+                            are a people and culture native to the Valyrian Peninsula, on the continent of Essos. For
+                            thousands of years,
+                            their empire, known as the Valyrian Freehold, was the dominant civilization on the
+                            continent. Roughly four
+                            hundred years prior to the War of the Five Kings, a cataclysmic event known as "the Doom"
+                            shattered the
+                            Valyrians' capital city and all but obliterated them.</span></div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><img src="./assets/images/horse.png" class="horse-icon" alt="">About
+                        The Dothraki:
+                    </div>
+                    <div class="collapsible-body"><span>The Dothraki are a race of nomadic horse-mounted warriors in
+                            Essos, the continent to the east of Westeros across the Narrow Sea. They inhabit the vast
+                            central plains of Essos, known as the Dothraki sea. Their bond with horses is such that
+                            Dothraki are said to be born, fight, and die in the saddle.</span></div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><img src="./assets/images/icons8-princess-48.png"
+                            class="valley-icon" alt="">About Valley girls:
+                    </div>
+                    <div class="collapsible-body"><span>Valley girl is a socioeconomic stereotype depicting a class of
+                            women characterized by the colloquial California English dialect Valleyspeak and
+                            materialism.
+                            Originally referring to upper-middle-class girls from the Los Angeles commuter communities
+                            of the San Fernando Valley during the 1980s,[1]
+                            the term in later years became more broadly applied to any female in the United States who
+                            embodied ditziness, airheadedness, or greater interest in conspicuous consumption than
+                            intellectual or personal accomplishment.</span></div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><img src="./assets/images/icons8-yoda-48.png" class=yoda-icon
+                            alt="">About Yoda's species:
+                    </div>
+                    <div class="collapsible-body"><span>The Jedi Master Yoda was the best-known member of a species
+                            whose true name is not recorded. Known in some sources simply as Yoda's species, this
+                            species of small carnivorous humanoids produced several well-known members of the Jedi Order
+                            during the time of the Galactic Republic.</span></div>
+                </li>
+            </ul>
+
+            <footer>
+                <h5>Copyright &#169; 2020 UCSD Extension Talk Geeky To Me Gang</h5>
+
+
+
+    </div>
+    </footer>
+    </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+
+        var translatedOutput;
+        $(document).ready(function () {
+            $("#translate-all").on("click", function () {
+                var userInput = $("#yourtext").val();
+                var languageChoice = $(".user-choice").val();
+                console.log(languageChoice);
+
+                if (languageChoice === "Dothraki") {
+                    ajaxtranslate("https://dothraki.p.rapidapi.com/dothraki.json?text=", userInput, "dothraki.p.rapidapi.com");
+                }
+
+                else if (languageChoice === "Elvish") {
+                    console.log("we did it!");
+                    ajaxtranslate("https://elvish.p.rapidapi.com/sindarin.json?text=", userInput, "elvish.p.rapidapi.com");
+                }
+                else if (languageChoice === "Valley Girl") {
+                    console.log("we did it!");
+                    ajaxtranslate("https://valspeak.p.rapidapi.com/valspeak.json?text=", userInput, "valspeak.p.rapidapi.com");
+                }
+                else if (languageChoice === "Sith") {
+                    console.log("we did it!");
+                    ajaxtranslateSith("https://sith.p.rapidapi.com/sith.json?text=", userInput, "sith.p.rapidapi.com");
+                }
+                else if (languageChoice === "Yodish") {
+                    console.log("we did it!");
+                    ajaxtranslate("https://yodish.p.rapidapi.com/yoda.json?text=", userInput, "yodish.p.rapidapi.com");
+                }
+                else if (languageChoice === "Valyrian") {
+                    ajaxtranslate("https://valyrian.p.rapidapi.com/valyrian.json?text=", userInput, "valyrian.p.rapidapi.com")
+                }
+
+                function ajaxtranslate(queryURL, userInput, xhost) {
+                    var queryURL2 = queryURL + userInput;
+                    console.log("queryURL2: " + queryURL);
+                    console.log("userInput: " + userInput);
+                    console.log("xhost: " + xhost);
+
+                    $.ajax({
+                        url: queryURL2,
+                        method: "POST",
+                        headers: {
+                            "x-rapidapi-host": xhost,
+                            "x-rapidapi-key": "f14b75ccd4msh0f111102ae02ed1p12818bjsn7f3dca89ed3e",
+                            "content-type": "application/x-www-form-urlencoded"
+                        }
+                    }).then(function (response) {
+                        $(".translated-output").empty();
+                        var newDiv = $("<div>");
+                        newDiv.addClass("translate-box");
+                        newDiv.text(JSON.stringify(response.contents.translated));
+                        // newDiv.addClass("_____"); // give it a class
+                        $(".translated-output").append(newDiv);
+                        console.log('response-one: ' + JSON.stringify(response.contents.translated));
+                        translatedOutput = JSON.stringify(response.contents.translated);
+                    });
+                }
+
+                function ajaxtranslateSith(queryURL, userInput, xhost) {
+                    var queryURL2 = queryURL + userInput;
+                    console.log("queryURL2: " + queryURL);
+                    console.log("userInput: " + userInput);
+                    console.log("xhost: " + xhost);
+
+                    $.ajax({
+                        url: queryURL2,
+                        method: "GET",
+                        headers: {
+                            "x-rapidapi-host": xhost,
+                            "x-rapidapi-key": "f14b75ccd4msh0f111102ae02ed1p12818bjsn7f3dca89ed3e",
+                            "content-type": "application/x-www-form-urlencoded"
+                        }
+                    }).then(function (response) {
+                        $(".translated-output").empty();
+                        var newDiv = $("<div>");
+                        newDiv.addClass("translate-box");
+                        newDiv.text(JSON.stringify(response.contents.translated));
+                        // newDiv.addClass("_____"); // give it a class
+                        $(".translated-output").append(newDiv);
+                        console.log('response-one: ' + JSON.stringify(response.contents.translated));
+                        translatedOutput = JSON.stringify(response.contents.translated);
+                    });
+                }
+
+            });
+
+            $(".twittersharelink").on("click", function () {
+                $(".twittersharelink").attr("href", "https://twitter.com/intent/tweet?text=" + translatedOutput);
+            });
+
+            
+        $(document).ready(function () {
+            $('.dropdown-trigger').dropdown();
+        });
+        $(document).ready(function () {
+            $('.collapsible').collapsible();
+        });
+
+        });
+
+
+    </script>
+</body>
+
+</html>
